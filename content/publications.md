@@ -1,4 +1,5 @@
 Trustworthy Fog: A Reputation-Based Consensus Method for IoT with Blockchain and Fog Computing | <strong>P. Feng</strong>, Y. L. Ma, B. Li, B. F. Han, T. Fang | Computers and Electrical Engineering, vol. 120, p. 109749, 2024
+A Scalable Group Authentication Protocol for IoT Based on PUF-Derived Bases in Inner Product Spaces | <strong>P. Feng</strong>, B. Li, B. F. Han, Y. L. Ma, Y. Y. Hu, R. N. Zhao| Cybersecurity, vol. 9, no. 41, 2026
 A Food Traceability System Based on Blockchain and Radio Frequency Identification Technologies | M. L. Deng, <strong>P. Feng</strong> | Journal of Computer and Communications, vol. 8, no. 9, pp. 17–27, 2020
 Research on a Traceability Scheme for a Grain Supply Chain | M. L. Deng, <strong>P. Feng</strong> | Journal of Sensors, vol. 2021, Article ID 8860487, 2021
 Design and Implementation of Grain Traceability Code Coding Scheme | M. L. Deng, <strong>P. Feng</strong> | Proceedings of the 2nd International Conference on Industrial Control Network and System Engineering Research, pp. 5–9, 2020
