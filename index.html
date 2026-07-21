@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/F.ico" type="image/ico">
+    <title>Pan Feng's Homepage</title>
+    <!-- 引入现代化字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- 1. 引入MD转HTML的CDN库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 2. 引入外部CSS样式文件（解耦后的样式） -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 3. 引入图标库（保持不变） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- 左侧固定侧边栏（头像 + 个人基本信息） -->
+    <aside class="sidebar">
+        <div class="sidebar-container">
+            <img src="images/profile.jpg" alt="Pan Feng" class="sidebar-profile-photo">
+            <div class="sidebar-info">
+                <h1><a href="https://fp1022.dpdns.org/" target="_blank">Pan Feng (冯盼)</a></h1>
+                <div class="sidebar-title">Ph.D. Student</div>
+                <div class="sidebar-title">School of Cyber Science and Engineering</div>
+                <div class="sidebar-title">Southeast University</div>
+                
+                <div class="sidebar-contact">
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <a>NanJing, China</a>
+                    </div>                    
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:fp_1022@seu.edu.cn">fp_1022@seu.edu.cn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-google"></i>
+                        <a href="https://scholar.google.com/citations?hl=en&user=NQzVlS8AAAAJ" target="_blank">Google Scholar</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-link"></i>
+                        <a href="https://orcid.org/0000-0002-1205-5928" target="_blank">ORCID</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 导航栏（保留，微调位置适配侧边栏） -->
+     <div class="nav-left-fixed-name">Pan Feng</div>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 右侧滚动内容区（补充移动端header，修复个人信息显示问题） -->
+    <div class="main-content">
+        <!-- 移动端专属header（承载个人信息，桌面端隐藏） -->
+        <header>
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Pan Feng" class="profile-image-photo">
+                <div class="profile-info">
+                    <h1><a href="https://fp1022.dpdns.org/" target="_blank">Pan Feng (冯盼)</a></h1>
+                    <div class="title">Ph.D. Student</div>
+                    <div class="title">School of Cyber Science and Engineering</div>
+                    <div class="title">Southeast University</div>
+                    
+                    <div class="contact">
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <a>NanJing, China</a>
+                        </div>                    
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:fp_1022@seu.edu.cn">fp_1022@seu.edu.cn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-google"></i>
+                            <a href="https://scholar.google.com/citations?hl=en&user=NQzVlS8AAAAJ" target="_blank">Google Scholar</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-link"></i>
+                            <a href="https://orcid.org/0000-0002-1205-5928" target="_blank">ORCID</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 原有核心内容（保持不变） -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div id="about-content" class="bio"></div>
+        </section>
+
+        <section id="news">
+            <h2>News</h2>
+            <div id="news-content" class="news-timeline"></div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div id="publications-content"></div>
+        </section>
+    </div>
+ <footer>
+    <div class="footer-content">
+        <p class="footer-slogan">何须多虑盈亏事，终归小满胜万全</p>
+        <p class="footer-update">Last updated: <time datetime="2026-01-26">2026-05-28</time></p>
+        <p class="footer-update">Since <time datetime="2026-01-19">2026-01-19</time></p>
+        <!-- 嵌入计数器 -->
+        <div style="margin-top:10px;">
+            <a href="https://info.flagcounter.com/Njss">
+                <img src="https://s01.flagcounter.com/count2/Njss/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- 引入外部JavaScript文件（解耦后的逻辑） -->
+    <script src="js/main.js"></script>
+</body>
+</html>
