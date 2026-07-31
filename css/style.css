@@ -443,6 +443,40 @@ footer {
     opacity: 0.6;
 }
 
+.flag-counter {
+    margin-top: 10px;
+}
+
+.flag-counter img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visitor-stats {
+    min-height: 22px;
+    margin-top: 4px;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.visitor-stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.visitor-stat i {
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.visitor-stats-divider {
+    margin: 0 7px;
+    color: var(--border-medium);
+}
+
 /* Mobile Responsive */
 @media (max-width: 992px) {
     .sidebar {

@@ -86,16 +86,35 @@
         <p class="footer-slogan">何须多虑盈亏事，终归小满胜万全</p>
         <p class="footer-update">Last updated: <time datetime="2026-01-26">2026-05-28</time></p>
         <p class="footer-update">Since <time datetime="2026-01-19">2026-01-19</time></p>
-        <!-- 嵌入计数器 -->
-        <div style="margin-top:10px;">
-            <a href="https://info.flagcounter.com/Njss">
-                <img src="https://s01.flagcounter.com/count2/Njss/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+        <!-- 国旗访问来源统计 -->
+        <div class="flag-counter">
+            <a href="https://info.flagcounter.com/Njss" target="_blank" rel="noopener noreferrer">
+                <img src="https://s01.flagcounter.com/count2/Njss/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Visitor countries provided by Flag Counter">
             </a>
+        </div>
+        <!-- 全站浏览量（PV）与独立访客数（UV） -->
+        <div class="visitor-stats" aria-label="网站访问统计">
+            <span id="busuanzi_container_site_pv" style="display: none;">
+                <span class="visitor-stat">
+                    <i class="bi bi-eye-fill" aria-hidden="true"></i>
+                    <span id="busuanzi_value_site_pv"></span>
+                    <span>总访问量</span>
+                </span>
+                <span class="visitor-stats-divider" aria-hidden="true">|</span>
+            </span>
+            <span id="busuanzi_container_site_uv" style="display: none;">
+                <span class="visitor-stat">
+                    <i class="bi bi-person-fill" aria-hidden="true"></i>
+                    <span id="busuanzi_value_site_uv"></span>
+                    <span>访客数</span>
+                </span>
+            </span>
         </div>
     </div>
 </footer>
 
     <!-- 引入外部JavaScript文件（解耦后的逻辑） -->
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
