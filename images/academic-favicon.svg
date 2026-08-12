@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Academic cap and book</title>
+  <defs>
+    <linearGradient id="background" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17324d"/>
+      <stop offset="1" stop-color="#0b263b"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#background)"/>
+  <path d="M10 25.5 32 15l22 10.5L32 36 10 25.5Z" fill="#5eead4"/>
+  <path d="M18 30v10.5c7.8 6 20.2 6 28 0V30l-14 6.7L18 30Z" fill="#0f766e"/>
+  <path d="M52 27v12" fill="none" stroke="#c89b3c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="52" cy="42" r="3" fill="#c89b3c"/>
+  <path d="M15 45.5c6-1.3 11.7-.2 17 3.3 5.3-3.5 11-4.6 17-3.3v6.8c-6-1.2-11.7.1-17 3.7-5.3-3.6-11-4.9-17-3.7v-6.8Z" fill="#fff"/>
+  <path d="M32 48.8V56" fill="none" stroke="#c89b3c" stroke-width="2"/>
+</svg>
