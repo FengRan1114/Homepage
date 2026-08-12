@@ -9,39 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 1. 引入MD转HTML的CDN库 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- 2. 引入外部CSS样式文件（解耦后的样式） -->
+    <!-- 1. 引入外部CSS样式文件 -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- 3. 引入图标库（保持不变） -->
+    <!-- 2. 引入图标库 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- 左侧固定侧边栏（头像 + 个人基本信息） -->
     <aside class="sidebar">
         <div class="sidebar-container">
-            <img src="images/profile.jpg" alt="Pan Feng" class="sidebar-profile-photo">
+            <div class="profile-photo-frame">
+                <img src="images/profile.jpg" alt="Portrait of Pan Feng" class="sidebar-profile-photo">
+            </div>
             <div class="sidebar-info">
-                <h1><a href="https://fp1022.dpdns.org/" target="_blank">Pan Feng (冯盼)</a></h1>
-                <div class="sidebar-title">Ph.D. Student</div>
+                <h1><a href="https://fp1022.dpdns.org/" target="_blank" rel="noopener noreferrer">Pan Feng (冯盼)</a></h1>
+                <div class="sidebar-role"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Ph.D. Student</div>
                 <div class="sidebar-title">School of Cyber Science and Engineering</div>
                 <div class="sidebar-title">Southeast University</div>
                 
                 <div class="sidebar-contact">
                     <div class="contact-item">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <a>NanJing, China</a>
+                        <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                        <span>Nanjing, China</span>
                     </div>                    
                     <div class="contact-item">
-                        <i class="bi bi-envelope-fill"></i>
+                        <i class="bi bi-envelope-paper" aria-hidden="true"></i>
                         <a href="mailto:fp_1022@seu.edu.cn">fp_1022@seu.edu.cn</a>
                     </div>
                     <div class="contact-item">
-                        <i class="bi bi-google"></i>
+                        <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
                         <a href="https://scholar.google.com/citations?hl=en&user=NQzVlS8AAAAJ" target="_blank">Google Scholar</a>
                     </div>
                     <div class="contact-item">
-                        <i class="bi bi-link"></i>
+                        <i class="bi bi-person-badge" aria-hidden="true"></i>
                         <a href="https://orcid.org/0000-0002-1205-5928" target="_blank">ORCID</a>
                     </div>
                 </div>
@@ -67,25 +67,86 @@
 
         <!-- 原有核心内容（保持不变） -->
         <section id="about">
-            <h2>About Me</h2>
-            <div id="about-content" class="bio"></div>
+            <h2><i class="bi bi-person-workspace" aria-hidden="true"></i>About Me</h2>
+            <div id="about-content" class="bio">
+                <p>I am a Ph.D. student at the School of Cyber Science and Engineering, Southeast University, supervised by Prof. Bing Li. My research lies at the intersection of cryptography and distributed machine learning, with a primary focus on privacy-preserving federated learning. I am particularly interested in the design of secure protocols that provide formal security and correctness guarantees under privacy and decentralization constraints. My current work explores the use of cryptographic primitives such as zero-knowledge proofs and secure multiparty computation to address security and privacy challenges in distributed intelligent network environments.</p>
+                <h3>Research Interests</h3>
+                <div class="research-interests">
+                    <span class="interest-tag">Cyber Security and Privacy</span>
+                    <span class="interest-tag">Federated Learning</span>
+                    <span class="interest-tag">Cryptography</span>
+                </div>
+            </div>
         </section>
 
         <section id="news">
-            <h2>News</h2>
-            <div id="news-content" class="news-timeline"></div>
+            <h2><i class="bi bi-megaphone" aria-hidden="true"></i>News</h2>
+            <div id="news-content" class="news-timeline">
+                <div class="news-item">
+                    <div class="news-time">2026-05-28</div>
+                    <div class="news-content">
+                        <div class="news-content-title">Awarded CSC Scholarship 🎉</div>
+                        <div class="news-content-desc">I have been granted the CSC (China Scholarship Council) funding to support my academic research and overseas study.</div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-time">2026-01-19</div>
+                    <div class="news-content">
+                        <div class="news-content-title">Created Personal Homepage 🎇</div>
+                        <div class="news-content-desc">I have successfully created my personal homepage to showcase my research achievements and academic progress.</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="publications">
-            <h2>Publications</h2>
-            <div id="publications-content"></div>
+            <h2><i class="bi bi-file-earmark-text" aria-hidden="true"></i>Publications</h2>
+            <div id="publications-content">
+                <article class="publication">
+                    <div class="pub-title">Trustworthy Fog: A Reputation-Based Consensus Method for IoT with Blockchain and Fog Computing</div>
+                    <div class="pub-authors"><strong>P. Feng</strong>, Y. L. Ma, B. Li, B. F. Han, T. Fang</div>
+                    <div class="pub-venue">Computers and Electrical Engineering, vol. 120, p. 109749, 2024</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">A Scalable Group Authentication Protocol for IoT Based on PUF-Derived Bases in Inner Product Spaces</div>
+                    <div class="pub-authors"><strong>P. Feng</strong>, B. Li, B. F. Han, Y. L. Ma, Y. Y. Hu, R. N. Zhao</div>
+                    <div class="pub-venue">Cybersecurity, vol. 9, no. 41, 202</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">A Food Traceability System Based on Blockchain and Radio Frequency Identification Technologies</div>
+                    <div class="pub-authors">M. L. Deng, <strong>P. Feng</strong></div>
+                    <div class="pub-venue">Journal of Computer and Communications, vol. 8, no. 9, pp. 17–27, 2020</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">Research on a Traceability Scheme for a Grain Supply Chain</div>
+                    <div class="pub-authors">M. L. Deng, <strong>P. Feng</strong></div>
+                    <div class="pub-venue">Journal of Sensors, vol. 2021, Article ID 8860487, 2021</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">Design and Implementation of Grain Traceability Code Coding Scheme</div>
+                    <div class="pub-authors">M. L. Deng, <strong>P. Feng</strong></div>
+                    <div class="pub-venue">Proceedings of the 2nd International Conference on Industrial Control Network and System Engineering Research, pp. 5–9, 2020</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">Research Status on RFID System Authentication Protocol</div>
+                    <div class="pub-authors">M. L. Deng, <strong>P. Feng</strong></div>
+                    <div class="pub-venue">Proceedings of the 2019 International Conference on Artificial Intelligence and Computer Science, pp. 432–438, 2019</div>
+                </article>
+                <article class="publication">
+                    <div class="pub-title">An Approximate CTL Model Checking Approach</div>
+                    <div class="pub-authors">W. J. Zhu, <strong>P. Feng</strong>, M. L. Deng</div>
+                    <div class="pub-venue">Proceedings of the IEEE 10th International Conference on Software Engineering and Service Science (ICSESS), pp. 646–648, 2019</div>
+                </article>
+            </div>
         </section>
     </div>
  <footer>
     <div class="footer-content">
         <p class="footer-slogan">何须多虑盈亏事，终归小满胜万全</p>
-        <p class="footer-update">Last updated: <time datetime="2026-01-26">2026-05-28</time></p>
-        <p class="footer-update">Since <time datetime="2026-01-19">2026-01-19</time></p>
+        <div class="footer-meta">
+            <span><i class="bi bi-arrow-clockwise" aria-hidden="true"></i> Last updated: <time datetime="2026-05-28">2026-05-28</time></span>
+            <span><i class="bi bi-calendar3" aria-hidden="true"></i> Since <time datetime="2026-01-19">2026-01-19</time></span>
+        </div>
         <!-- 国旗访问来源统计 -->
         <div class="flag-counter">
             <a href="https://info.flagcounter.com/Njss" target="_blank" rel="noopener noreferrer">
@@ -96,7 +157,7 @@
         <div class="visitor-stats" aria-label="Website visitor statistics">
             <span id="busuanzi_container_site_pv" style="display: none;">
                 <span class="visitor-stat">
-                    <i class="bi bi-eye-fill" aria-hidden="true"></i>
+                    <i class="bi bi-bar-chart-line" aria-hidden="true"></i>
                     <span id="busuanzi_value_site_pv"></span>
                     <span>Page Views</span>
                 </span>
@@ -104,7 +165,7 @@
             </span>
             <span id="busuanzi_container_site_uv" style="display: none;">
                 <span class="visitor-stat">
-                    <i class="bi bi-person-fill" aria-hidden="true"></i>
+                    <i class="bi bi-people" aria-hidden="true"></i>
                     <span id="busuanzi_value_site_uv"></span>
                     <span>Visitors</span>
                 </span>
@@ -113,8 +174,7 @@
     </div>
 </footer>
 
-    <!-- 引入外部JavaScript文件（解耦后的逻辑） -->
+    <!-- Visitor statistics -->
     <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
